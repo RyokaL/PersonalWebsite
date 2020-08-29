@@ -1,0 +1,163 @@
+:root {
+    --slate-gray : #424554;
+    --bone-white : rgba(245, 245, 245, 0.6);
+    --dark-cyan : #001b1f;
+    --charcoal : #1c1c1c;
+    --twilit-glass : rgba(26, 17, 43, 0.4);
+    --night-glass : rgba(3, 3, 82, 0.4);
+    --midnight-glass : rgba(10, 10, 10, 0.4);
+  }
+  * {
+    margin : 0;
+    padding : 0;
+  }
+  
+  body {
+    overflow-x : hidden;
+  }
+  
+  .main {
+    background-color : var(--slate-gray);
+  }
+  
+  .menu {
+    background-color : var(--bone-white);
+    bottom : 0;
+    width : 100%;
+    position : fixed;
+    overflow : hidden;
+    text-align : center;
+    left : 0;
+    backdrop-filter : blur(2px);
+    z-index : 100;
+  }
+  
+  .menu a {
+    color : var(--charcoal);
+    display : inline-block;
+    text-align : center;
+    padding : 13px 20px;
+    text-decoration : none;
+    cursor: pointer;
+  }
+  
+  .menuItem:before {
+      content:" ";
+      margin:7px -23px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: var(--slate-gray);
+  }
+  
+  .fix {
+    display : inline-block;
+  }
+  
+  .menu a:hover .fix{
+      color : var(--bone-white);
+      background : var(--charcoal);
+  }
+  
+  .overlay {
+    text-align : center;
+  }
+  
+  .centered {
+    text-align : center;
+  }
+  
+  h1 {
+    font-size : 2rem;
+  }
+  
+  .bottom {
+    position : absolute;
+    bottom : 10%;
+    top : 15%;
+    left : 0;
+    right : 0;
+    text-align : center;
+  }
+  
+  .titleName {
+    background : rgba(0,0,0,0.5);
+    height : 10%;
+    width : 50%;
+    top : 60%;
+    left : 25%;
+    position : absolute;
+    z-index : 2;
+    text-align : center;
+    vertical-align : bottom;
+    color : white;
+    margin : 0 auto;
+    border-radius : 5px;
+    box-shadow : 0px 0px 10px var(--slate-gray);
+  }
+  
+  .titleImage {
+    background : rgba(0,0,0,0.5);
+    width: 10%;
+    height: 0;
+    padding-bottom: 10%;
+    left : 0;
+    right : 0;
+    bottom : 50%;
+    top : 40%;
+    z-index : 3;
+    position : absolute;
+    text-align : center;
+    color : white;
+    margin : 0 auto;
+    border-radius : 50%;
+    box-shadow : 0px 0px 10px var(--slate-gray);
+  }
+  
+  .circleImage {
+    background-image : url("https://3.bp.blogspot.com/-qDc5kIFIhb8/UoJEpGN9DmI/AAAAAAABl1s/BfP6FcBY1R8/s1600/BlueHead.jpg");
+    height : 90%;
+    width : 90%;
+    position : absolute;
+    top : 5%;
+    left : 5%;
+    z-index : 3;
+    border-radius : 50%;
+    background-size : cover;
+  }
+  
+  .titleSection canvas {
+    background: rgb(2,0,36);
+    background: linear-gradient(rgba(0, 0, 28,1) 0%, rgba(12, 0, 80,1) 60%, rgba(25,0,80,1) 90%, rgba(0,0,0,1) 100%);
+    display : block;
+    width : 100vw;
+    height : 400vh;
+    z-index: 1;
+  }
+  
+  .section {
+    position: absolute;
+    text-align : center;
+    left : 0;
+    width : 100vw;
+    height : 100vh;
+    z-index: 2;
+    overflow : hidden;
+    backdrop-filter : blur(2px);
+  }
+  
+  .secondSection {
+    background-color : var(--night-glass);
+    top : 100%;
+  }
+
+  .thirdSection {
+    background-color : var(--twilit-glass);
+    top : 200%;
+  }
+
+  .fourthSection {
+    background-color: var(--midnight-glass);
+    top : 300%;
+  }
