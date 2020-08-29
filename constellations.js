@@ -62,7 +62,7 @@ Star = function(minX, maxX, minY, maxY) {
   this.absY = this.y;
   this.radius = 3 * Math.random() + 2;
   if(mobile) {
-    radius = 5 * Math.random() + 3;
+    radius = 5 * Math.random() + 4;
   }
 };
 
@@ -71,7 +71,7 @@ function constDraw(ctx, toDraw) {
   ctx.strokeStyle = toDraw.colour;
   ctx.lineWidth = 1;
   if(mobile) {
-    ctx.lineWidth = 2;
+    ctx.lineWidth = 3;
   }
   
   var currStar;
@@ -139,7 +139,7 @@ function starLoop() {
 function genConstel() {
   var constelNum = Math.floor(Math.random() * 75) + 25;
   if(mobile) {
-    constelNum = Math.floor(Math.random() * 20) + 10;
+    constelNum = Math.floor(Math.random() * 10) + 6;
   }
   var starNum;
   var currConstel;
